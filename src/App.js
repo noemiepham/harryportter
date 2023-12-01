@@ -1,5 +1,9 @@
 import "./App.css";
-import { Route, BrowserRouter, Router, Routes } from "react-router-dom";
+import Hufflepuff from "./containers/Hufflepuff/Hufflepuff";
+import Ravenclaw from "./containers/Revenclaw/Revenclaw";
+import Slytherin from "./containers/Slytherin/Slytherin";
+import Gryffindor from "./containers/Gryffindor/Gryffindor";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 function App() {
   return (
