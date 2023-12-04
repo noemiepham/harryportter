@@ -1,0 +1,4 @@
+.houses {
+     display: flex;
+     flex-wrap: wrap;
+}
