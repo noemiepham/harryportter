@@ -7,6 +7,7 @@ import Gryffindor from "./containers/Gryffindor/Gryffindor";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import AllHouse from "./containers/AllHouse/AllHouse";
 function App() {
   const [houses, setHouses] = useState([]);
 
@@ -22,6 +23,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
+            <Route path="/" element={<AllHouse />} />
             <Route path="Gryffindor" element={<Gryffindor />} />
             <Route path="Ravenclaw" element={<Ravenclaw />} />
             <Route path="Slytherin" element={<Slytherin />} />
