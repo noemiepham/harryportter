@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Card from "../../components/Card/Card";
 import "../../containers/houses.css";
-const Hufflepuff = () => {
-  const [hufflepuff, setHufflepuff] = useState([]);
+const Ravenclaw = () => {
+  const [ravenclaw, setRavenclaw] = useState([]);
 
   useEffect(() => {
-    fetch("https://hp-api.onrender.com/api/characters/house/hufflepuff")
+    fetch("https://hp-api.onrender.com/api/characters/house/Ravenclaw")
       .then((res) => res.json())
-      .then((data) => setHufflepuff(data));
+      .then((data) => setRavenclaw(data));
   }, []);
-  console.log(hufflepuff);
+  console.log(ravenclaw);
 
   return (
     <div className="houses">
-      {hufflepuff.map((item) => (
+      {ravenclaw.map((item) => (
         <Card item={item} key={item.id} />
       ))}
     </div>
   );
 };
 
-export default Hufflepuff;
+export default Ravenclaw;

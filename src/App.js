@@ -1,7 +1,7 @@
 import "./App.css";
 import Layout from "./components/Home/Layout";
 import Hufflepuff from "./containers/Hufflepuff/Hufflepuff";
-import Ravenclaw from "./containers/Revenclaw/Revenclaw";
+import Ravenclaw from "./containers/Ravenclaw/Ravenclaw";
 import Slytherin from "./containers/Slytherin/Slytherin";
 import Gryffindor from "./containers/Gryffindor/Gryffindor";
 import { Route, BrowserRouter, Routes } from "react-router-dom";

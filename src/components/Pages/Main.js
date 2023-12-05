@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 const houses = [
   {
@@ -35,9 +34,7 @@ const houses = [
 ];
 
 function Main() {
-  const [items, setItems] = useState("");
   const navigation = useNavigate();
-  const handleClick = () => {};
   return (
     <div className="mainContain">
       <div className="sidebar">
